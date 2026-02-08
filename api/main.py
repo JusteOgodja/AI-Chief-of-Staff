@@ -28,7 +28,7 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080", "http://localhost:8081", "http://localhost:8084", "http://localhost:3000"],  # Frontend URLs
+    allow_origins=["http://localhost:8080", "http://localhost:8081", "http://localhost:8082", "http://localhost:8084", "http://localhost:3000"],  # Frontend URLs
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -44,6 +44,12 @@ def get_orchestrator():
         truth_path = ROOT / "data" / "processed" / "truth.json"
         orchestrator = AgentOrchestrator(graph_path, truth_path)
     return orchestrator
+
+def reload_orchestrator():
+    """Force reload of orchestrator with fresh data."""
+    global orchestrator
+    orchestrator = None  # Reset cache
+    return get_orchestrator()
 
 # Pydantic models
 class QueryRequest(BaseModel):
@@ -197,6 +203,20 @@ async def check_overload(person_email: str):
         return overload_response
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error checking overload: {str(e)}")
+
+@app.post("/api/reload")
+async def reload_data():
+    """Force reload of orchestrator data."""
+    try:
+        orch = reload_orchestrator()
+        return {
+            "status": "reloaded",
+            "message": "Orchestrator reloaded with fresh data",
+            "graph_nodes": orch.graph.number_of_nodes(),
+            "truth_entries": len(orch.truth.entries)
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Reload failed: {str(e)}")
 
 @app.get("/api/health")
 async def health_check():

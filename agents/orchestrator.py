@@ -39,6 +39,36 @@ class AgentOrchestrator:
                 response = self.memory_agent.what_changed_today()
             else:
                 response = self.memory_agent.what_is_current_truth()
+            
+            # Normalize response structure
+            if "decisions" in response or "topics" in response:
+                normalized_response = {
+                    "answer": response["answer"],
+                    "results": [],
+                    "changes": response.get("changes", []),
+                    "recommended_notifications": [],
+                    "reasoning": response.get("reasoning", "")
+                }
+                
+                # Add decisions to results
+                for decision in response.get("decisions", []):
+                    normalized_response["results"].append({
+                        "type": "decision",
+                        "content": decision["content"],
+                        "timestamp": decision["timestamp"],
+                        "version": decision.get("version", 1)
+                    })
+                
+                # Add topics to results
+                for topic in response.get("topics", []):
+                    normalized_response["results"].append({
+                        "type": "topic", 
+                        "content": topic["content"],
+                        "timestamp": topic["timestamp"],
+                        "version": topic.get("version", 1)
+                    })
+                
+                response = normalized_response
         
         elif "who needs to know" in query_lower:
             # Extract the content after "who needs to know"
@@ -51,6 +81,17 @@ class AgentOrchestrator:
             person_idx = words.index("for") + 1 if "for" in words else -1
             person = words[person_idx] if person_idx < len(words) else ""
             response = self.memory_agent.get_context_for_person(person)
+            
+            # Normalize response structure
+            if "relevant_truth" in response:
+                normalized_response = {
+                    "answer": response["answer"],
+                    "results": response.get("relevant_truth", []),
+                    "changes": response.get("recent_changes", []),
+                    "recommended_notifications": [],
+                    "reasoning": response.get("reasoning", "")
+                }
+                response = normalized_response
         
         elif "conflict" in query_lower or "contradiction" in query_lower:
             response = self.critic_agent.detect_conflicts()
