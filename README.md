@@ -1,171 +1,334 @@
-# Superhuman AI Chief of Staff
+# AI Chief of Staff
 
-**AI Operating System for Organizational Communication** — an agentic system that maps information flow, builds a stakeholder and knowledge graph, and maintains a living source of truth.
+**AI Operating System for Organizational Communication** — An intelligent system that maps information flow, builds stakeholder knowledge graphs, and maintains a living source of truth.
+
+## 🎯 Overview
+
+AI Chief of Staff is an organizational intelligence platform that uses AI agents to analyze communication patterns, extract insights, and maintain a dynamic knowledge graph of your organization's information flow.
+
+### Key Features
+
+- **🧠 AI Agents**: Specialized agents for memory, coordination, and critical analysis
+- **📊 Knowledge Graph**: Interactive visualization of people, topics, and decisions
+- **💬 Natural Language Queries**: Ask questions about your organization in plain language
+- **🔍 Conflict Detection**: Identify conflicting decisions and information overload
+- **📈 Stakeholder Mapping**: Understand communication patterns and influence networks
+
+## 🏗️ Architecture
+
+```
+AI Chief of Staff/
+├── frontend_modern/          # React/Vite frontend application
+│   ├── src/
+│   │   ├── components/       # Reusable UI components
+│   │   ├── pages/           # Main application pages
+│   │   └── lib/             # Utilities and API client
+│   └── package.json
+├── api/                      # FastAPI backend server
+│   └── main.py              # API endpoints and orchestration
+├── agents/                   # AI agent implementations
+│   ├── orchestrator.py      # Main agent coordinator
+│   ├── memory_agent.py      # Memory and knowledge management
+│   ├── coordinator_agent.py # Communication coordination
+│   └── critic_agent.py     # Conflict and overload detection
+├── config/                   # Configuration management
+│   └── settings.py          # Environment and settings
+├── data/                     # Processed data storage
+│   ├── processed/           # Graph and truth data
+│   └── raw/                 # Original data files
+├── extraction/               # Information extraction
+│   └── extractor.py         # LLM-based content analysis
+├── graph/                    # Graph management
+│   └── manager.py          # NetworkX graph operations
+├── ingestion/               # Data processing pipeline
+│   └── processor.py         # Data transformation
+├── truth/                   # Source of truth management
+│   └── manager.py          # Truth data operations
+├── scripts/                 # Utility scripts
+│   ├── start-backend.py    # Backend server launcher
+│   ├── start-frontend.sh   # Frontend launcher (Unix)
+│   └── start-frontend.bat  # Frontend launcher (Windows)
+├── .env.example             # Environment template
+├── .env                     # Environment variables
+├── requirements.txt         # Python dependencies
+└── README.md               # This file
+```
 
 ## 🚀 Quick Start
 
+### Prerequisites
+
+- **Python 3.8+**
+- **Node.js 16+**
+- **Ollama** (for local LLM) or OpenAI API key
+
 ### 1. Environment Setup
+
 ```bash
+# Clone and setup
+git clone <repository-url>
+cd AI Chief of Staff
+
+# Create Python virtual environment
 python -m venv .venv
-.venv\Scripts\activate   # Windows
+.venv\Scripts\activate     # Windows
+source .venv/bin/activate  # Linux/Mac
+
+# Install Python dependencies
 pip install -r requirements.txt
 ```
 
 ### 2. Configuration
+
 ```bash
+# Copy environment template
 cp .env.example .env
-# Edit .env - LLM_PROVIDER=ollama by default (local, free)
+
+# Edit .env file
+# Default: LLM_PROVIDER=ollama (local, free)
+# Alternative: LLM_PROVIDER=openai (requires OPENAI_API_KEY)
 ```
 
-### 3. Demo Setup (Recommended)
+### 3. LLM Setup
+
+#### Option A: Ollama (Recommended - Free & Local)
 ```bash
-python -m demo.scenarios --setup
+# Install Ollama from https://ollama.ai
+# Pull required model
+ollama run llama3.2
 ```
-This creates realistic demo data with:
-- 6 organizational events (decisions, topics, conflicts)
-- Complete knowledge graph (people + topics + decisions)
-- Versioned source of truth
-- Pre-populated agent responses
 
-### 4. Launch Dashboard
+#### Option B: OpenAI
 ```bash
-streamlit run dashboard/app.py
+# Add to .env
+OPENAI_API_KEY=sk-your-key-here
+LLM_PROVIDER=openai
 ```
 
-### 5. Try Demo Queries
-In the dashboard, try these queries:
-- "What changed today?"
-- "What is the current truth?"
-- "Who needs to know about security issues?"
-- "Context for alice@company.com"
-- "Are there any conflicts?"
-- "Information overload for alice@company.com"
+### 4. Launch Application
 
-## 🏗️ Architecture
-
-### Core Components
-- **📊 Ingestion** - Parse emails/events → normalized communication events
-- **🧠 Extraction** - LLM-powered topic/decision/entity extraction (Ollama/OpenAI/heuristic)
-- **🕸️ Knowledge Graph** - People, topics, decisions with relationships
-- **📚 Source of Truth** - Versioned organizational knowledge
-- **🤖 AI Agents** - Memory, Coordinator, Critic with orchestration
-- **📈 Dashboard** - Interactive visualization and query interface
-
-### Agent Capabilities
-- **Memory Agent**: "What changed today?", "What is the current truth?", "Context for [person]"
-- **Coordinator Agent**: "Who needs to know this?", routing and amplification strategies
-- **Critic Agent**: Conflict detection, information overload analysis, knowledge gaps
-
-## 📋 Full Pipeline
-
-### Option A: Demo Data (Fastest)
+#### Method 1: Using Scripts (Recommended)
 ```bash
-1. python -m demo.scenarios --setup
-2. streamlit run dashboard/app.py
+# Terminal 1 - Start Backend
+python scripts/start-backend.py
+
+# Terminal 2 - Start Frontend
+cd frontend_modern
+npm install
+npm run dev
 ```
 
-### Option B: Custom Data
+#### Method 2: Manual Launch
 ```bash
-1. python -m ingestion.mock_data                    # Generate test emails
-2. python -m ingestion.run_ingestion                # Parse → events.json
-3. python -m extraction.run_enrich                  # Extract topics/decisions
-4. python -m graph.run_build                        # Build knowledge graph
-5. python -m truth.populate_truth                   # Populate source of truth
-6. streamlit run dashboard/app.py                   # Launch dashboard
+# Backend (Terminal 1)
+.venv\Scripts\activate
+python -m uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+
+# Frontend (Terminal 2)
+cd frontend_modern
+npm run dev
 ```
 
-## 🎯 Moonshot Challenge Features
+### 5. Access Application
 
-### ✅ Implemented Features
-- **Information Flow Mapping** - Complete communication graph with topics/decisions
-- **Stakeholder & Knowledge Graph** - Multi-type nodes (people, topics, decisions) with relationships
-- **Living Source of Truth** - Versioned decisions, topics, and facts
-- **Agentic AI System** - Memory, Coordinator, Critic agents with orchestration
-- **Intelligent Routing** - "Who needs to know this?" with network analysis
-- **Conflict Detection** - Automatic contradiction and overload detection
-- **Interactive Dashboard** - Multi-tab interface with visualizations
-- **Real-time Updates** - Event simulation with automatic graph/truth updates
+- **Frontend**: http://localhost:8080
+- **Backend API**: http://localhost:8000
+- **API Documentation**: http://localhost:8000/docs
 
-### 🔄 Query Examples
-- **"What changed today?"** → Shows recent decisions, topics, and facts
-- **"Who needs to know about X?"** → Recommends stakeholders based on graph topology
-- **"Context for [person]"** → Provides stakeholder context view
-- **"Are there any conflicts?"** → Detects contradictory decisions
-- **"Information overload for [person]"** → Analyzes communication load
+## 📱 Application Features
 
-## 📊 Evaluation Criteria Alignment
+### Knowledge Graph
+- Interactive visualization of organizational relationships
+- Filter by people, topics, and decisions
+- Search and explore connections
+- Real-time statistics and insights
 
-| Criterion | Implementation |
-|-----------|----------------|
-| **Communication Intelligence** | ✅ Graph topology + routing algorithms |
-| **Knowledge Graph & Stakeholder Map** | ✅ Multi-type nodes with relationships |
-| **UI & Visualization** | ✅ Interactive dashboard with reasoning display |
-| **UX & Interaction** | ✅ Natural language queries, minimal clicks |
-| **Creativity & Moonshot** | ✅ Agentic AI orchestration system |
-| **Deconfliction & Critique** | ✅ Conflict detection and overload analysis |
-| **Demo Quality** | ✅ Complete scenarios with realistic data |
+### AI Agent Interface
+- Natural language queries about your organization
+- Automatic agent routing based on query type
+- Context-aware responses using organizational data
+- Conflict and overload detection
 
-## 🛠️ Technical Stack
+### Analytics & Insights
+- Communication pattern analysis
+- Stakeholder influence mapping
+- Decision tracking and versioning
+- Information overload monitoring
 
-- **Backend**: Python 3.11+, NetworkX, Streamlit
-- **AI/ML**: Ollama (default), OpenAI (optional), heuristic extraction
-- **Graph**: NetworkX with JSON persistence
-- **Data**: Pandas, JSON for event processing
-- **UI**: Streamlit with interactive components
+## 🔧 Configuration
 
-## 📁 Project Structure
+### Environment Variables
 
-```
-├── agents/          # AI agents (Memory, Coordinator, Critic)
-├── config/          # Settings and environment
-├── dashboard/       # Streamlit UI
-├── demo/            # Demo scenarios and setup
-├── extraction/      # LLM-powered content extraction
-├── graph/           # Knowledge graph construction
-├── ingestion/       # Data parsing and normalization
-├── truth/           # Versioned source of truth
-└── data/            # Processed data and models
-```
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `LLM_PROVIDER` | `ollama` | LLM provider: `ollama`, `openai`, or `none` |
+| `OLLAMA_MODEL` | `llama3.2` | Ollama model name |
+| `OLLAMA_BASE_URL` | `http://localhost:11434` | Ollama server URL |
+| `OPENAI_API_KEY` | - | OpenAI API key (if using OpenAI) |
+| `OPENAI_MODEL` | `gpt-4o-mini` | OpenAI model name |
 
-## 🎪 Demo Scenarios
+### Backend Configuration
 
-The demo includes realistic organizational scenarios:
-1. **Product Launch Decision** → Later postponed (conflict detection)
-2. **Budget Reallocation** → Resource routing recommendations
-3. **Customer Feedback** → Priority changes
-4. **Security Issues** → Critical conflict with launch
-5. **Emergency Outage** → Real-time event processing
+The backend uses the following configuration:
+- **Host**: 0.0.0.0 (accessible from any network interface)
+- **Port**: 8000
+- **CORS**: Allows frontend on localhost:8080 and localhost:3000
 
-## 🚀 Advanced Usage
+### Frontend Configuration
 
-### Simulate New Events
+The frontend is configured with:
+- **Development Server**: Vite on port 8080
+- **Build Tool**: Vite with React and TypeScript
+- **UI Framework**: Radix UI components with Tailwind CSS
+
+## 🤖 AI Agents
+
+### Memory Agent
+- Maintains organizational knowledge and history
+- Answers questions about current truth and past events
+- Tracks changes and decisions over time
+
+### Coordinator Agent
+- Analyzes communication patterns
+- Identifies key stakeholders and information flow
+- Recommends communication strategies
+
+### Critic Agent
+- Detects conflicting decisions and information
+- Identifies potential information overload
+- Provides recommendations for resolution
+
+## 📊 Data Model
+
+### Knowledge Graph
+- **Nodes**: People, topics, decisions
+- **Edges**: Relationships and connections
+- **Properties**: Metadata, timestamps, versions
+
+### Source of Truth
+- **Facts**: Verified organizational information
+- **Decisions**: Official decisions with versions
+- **Topics**: Key discussion topics and their evolution
+
+## 🛠️ Development
+
+### Backend Development
 ```bash
-python -m demo.scenarios --simulate
+# Install development dependencies
+pip install -r requirements.txt
+
+# Run with auto-reload
+uvicorn api.main:app --reload
+
+# Run tests
+python -m pytest
 ```
 
-### Custom LLM Provider
-Edit `.env`:
-- `LLM_PROVIDER=ollama` (default, local)
-- `LLM_PROVIDER=openai` (requires OPENAI_API_KEY)
-- `LLM_PROVIDER=none` (heuristic only)
+### Frontend Development
+```bash
+# Install dependencies
+cd frontend_modern
+npm install
 
-### Voice Interface (Future)
-- STT/TTS integration planned for voice queries
-- Mobile-responsive design for on-the-go access
+# Development server
+npm run dev
 
-## 🏆 Why This Meets the Moonshot
+# Build for production
+npm run build
 
-This implementation transforms organizational communication from chaotic information flow to **intelligent, coordinated knowledge management**:
+# Run tests
+npm run test
+```
 
-- **🧠 AI Chief of Staff**: Not a chatbot, but an intelligent coordinator
-- **📊 Living Intelligence**: Continuous learning from organizational communication
-- **🎯 Targeted Communication**: Routes information to the right people
-- **⚡ Real-time Transparency**: Instant visibility into decisions and changes
-- **🔍 Conflict Resolution**: Proactive detection of contradictions
-- **📈 Knowledge Optimization**: Identifies gaps and overload patterns
+### Code Style
+- **Python**: Follow PEP 8, use type hints
+- **TypeScript**: ESLint + Prettier configuration
+- **Components**: Functional components with hooks
 
-The system demonstrates how AI can become the **brain of an organization** - seeing all communication, understanding dependencies, resolving conflicts, and creating transparency without overwhelming humans.
+## 🐛 Troubleshooting
+
+### Common Issues
+
+#### Backend Won't Start
+```bash
+# Check Python environment
+python --version
+pip list | grep fastapi
+
+# Verify dependencies
+pip install -r requirements.txt
+```
+
+#### Frontend Build Errors
+```bash
+# Clear node modules
+cd frontend_modern
+rm -rf node_modules package-lock.json
+npm install
+```
+
+#### Ollama Connection Issues
+```bash
+# Check Ollama status
+ollama list
+curl http://localhost:11434/api/tags
+
+# Restart Ollama service
+ollama serve
+```
+
+#### API Connection Errors
+- Verify backend is running on port 8000
+- Check CORS configuration
+- Ensure frontend is on port 8080
+
+### Logs and Debugging
+
+- **Backend logs**: Console output from uvicorn
+- **Frontend logs**: Browser developer tools console
+- **API errors**: Check backend console for detailed error messages
+
+## 📚 API Documentation
+
+### Main Endpoints
+
+- `GET /` - API information and endpoints
+- `POST /api/query` - Process natural language queries
+- `GET /api/graph/stats` - Get graph statistics
+- `GET /api/graph/nodes` - Get graph nodes
+- `GET /api/changes` - Get recent changes
+- `POST /api/conflicts/detect` - Detect conflicts
+- `GET /api/overload/{person_email}` - Check information overload
+
+### Interactive Documentation
+
+Visit http://localhost:8000/docs for interactive API documentation with Swagger UI.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+### Development Guidelines
+- Follow existing code style and patterns
+- Add meaningful commit messages
+- Update documentation for API changes
+- Test thoroughly before submitting
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🆘 Support
+
+For questions, issues, or contributions:
+- Create an issue in the repository
+- Check existing documentation
+- Review troubleshooting section above
 
 ---
 
-**Built for the HACNNATION Moonshot Challenge - Superhuman AI Chief of Staff**
+**Built with ❤️ using React, FastAPI, and modern AI technologies**

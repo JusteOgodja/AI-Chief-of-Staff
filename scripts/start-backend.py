@@ -12,7 +12,7 @@ def main():
     print("🚀 Starting AI Chief of Staff Backend...")
     
     # Check if we're in the right directory
-    project_root = Path(__file__).parent
+    project_root = Path(__file__).parent.parent
     os.chdir(project_root)
     
     # Check if virtual environment exists
