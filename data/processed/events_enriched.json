@@ -1,0 +1,149 @@
+[
+  {
+    "event_id": "demo_001",
+    "sender_id": "alice@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2026-02-07T04:09:51.498405",
+    "subject": "Q4 Product Launch Decision",
+    "body": "We have decided to proceed with the Q4 product launch. The marketing team will prepare the campaign and engineering will finalize the features by end of month.",
+    "thread_id": "launch_q4",
+    "source": "email",
+    "topics": [
+      "product launch",
+      "Q4 planning",
+      "marketing campaign"
+    ],
+    "decisions": [
+      "proceed with Q4 product launch",
+      "marketing team prepares campaign",
+      "engineering finalizes features"
+    ],
+    "entities_mentioned": [
+      "alice@company.com",
+      "bob@company.com",
+      "marketing@company.com",
+      "engineering@company.com"
+    ]
+  },
+  {
+    "event_id": "demo_002",
+    "sender_id": "carol@company.com",
+    "receiver_id": "team@company.com",
+    "timestamp": "2026-02-07T06:09:51.498405",
+    "subject": "Budget Reallocation Discussion",
+    "body": "After reviewing our Q3 performance, we need to reallocate budget from the legacy project to the new AI initiative. This will help us accelerate development.",
+    "thread_id": "budget_2024",
+    "source": "email",
+    "topics": [
+      "budget",
+      "resource allocation",
+      "AI initiative"
+    ],
+    "decisions": [
+      "reallocate budget from legacy project",
+      "fund new AI initiative"
+    ],
+    "entities_mentioned": [
+      "carol@company.com",
+      "team@company.com",
+      "finance@company.com"
+    ]
+  },
+  {
+    "event_id": "demo_003",
+    "sender_id": "david@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2026-02-07T08:09:51.498405",
+    "subject": "Customer Feedback Analysis",
+    "body": "Customer feedback indicates strong demand for the mobile app features. We should prioritize mobile development in the next sprint.",
+    "thread_id": "customer_feedback",
+    "source": "email",
+    "topics": [
+      "customer feedback",
+      "mobile app",
+      "development priorities"
+    ],
+    "decisions": [
+      "prioritize mobile app development",
+      "include in next sprint"
+    ],
+    "entities_mentioned": [
+      "david@company.com",
+      "alice@company.com",
+      "customers@company.com"
+    ]
+  },
+  {
+    "event_id": "demo_004",
+    "sender_id": "eve@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2026-02-07T10:09:51.498405",
+    "subject": "Team Meeting Schedule Change",
+    "body": "We need to cancel the weekly sync this Thursday due to the all-hands meeting. Let's reschedule for Friday afternoon.",
+    "thread_id": "meetings",
+    "source": "email",
+    "topics": [
+      "meeting schedule",
+      "team sync",
+      "all-hands"
+    ],
+    "decisions": [
+      "cancel Thursday sync",
+      "reschedule for Friday"
+    ],
+    "entities_mentioned": [
+      "eve@company.com",
+      "bob@company.com",
+      "team@company.com"
+    ]
+  },
+  {
+    "event_id": "demo_005",
+    "sender_id": "frank@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2026-02-07T12:09:51.498405",
+    "subject": "Security Audit Results",
+    "body": "The security audit identified several critical vulnerabilities in the legacy system. We recommend immediate patching before the product launch.",
+    "thread_id": "security",
+    "source": "email",
+    "topics": [
+      "security",
+      "audit",
+      "vulnerabilities",
+      "legacy system"
+    ],
+    "decisions": [
+      "patch critical vulnerabilities",
+      "address before product launch"
+    ],
+    "entities_mentioned": [
+      "frank@company.com",
+      "carol@company.com",
+      "security@company.com"
+    ]
+  },
+  {
+    "event_id": "demo_006",
+    "sender_id": "alice@company.com",
+    "receiver_id": "all@company.com",
+    "timestamp": "2026-02-07T13:09:51.498405",
+    "subject": "IMPORTANT: Launch Postponed",
+    "body": "Due to critical security issues identified, we are postponing the Q4 product launch until all vulnerabilities are resolved. New launch date TBD.",
+    "thread_id": "launch_q4",
+    "source": "email",
+    "topics": [
+      "product launch",
+      "security",
+      "postponement"
+    ],
+    "decisions": [
+      "postpone Q4 product launch",
+      "resolve security issues first"
+    ],
+    "entities_mentioned": [
+      "alice@company.com",
+      "all@company.com",
+      "frank@company.com"
+    ]
+  }
+]

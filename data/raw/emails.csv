@@ -1,0 +1,81 @@
+message_id,sender,recipients,date,subject,body
+msg_0,frank@company.com,alice@company.com,2025-01-01T23:00:00,Hiring plan engineering,Let's push to March 15.
+msg_1,bob@company.com,carol@company.com,2025-01-24T03:00:00,Meeting tomorrow,Same time tomorrow works.
+msg_2,eve@company.com,alice@company.com,2025-01-19T13:00:00,Q4 budget approval,Can we align on the numbers by Friday?
+msg_3,alice@company.com,carol@company.com,2025-01-08T16:00:00,OKRs next quarter,Can we align on the numbers by Friday?
+msg_4,eve@company.com,bob@company.com,2025-01-23T20:00:00,Meeting tomorrow,I'll send the draft by EOD.
+msg_5,dave@company.com,bob@company.com,2025-01-15T18:00:00,Hiring plan engineering,Can we align on the numbers by Friday?
+msg_6,bob@company.com,eve@company.com,2025-01-11T08:00:00,Product launch timeline,Let's push to March 15.
+msg_7,carol@company.com,alice@company.com,2025-01-03T12:00:00,Q4 budget approval,We need 2 more backend engineers.
+msg_8,carol@company.com,frank@company.com,2025-01-09T01:00:00,Meeting tomorrow,All services passed. Proceeding with deploy.
+msg_9,eve@company.com,alice@company.com,2025-01-30T12:00:00,Q4 budget approval,I'll send the draft by EOD.
+msg_10,carol@company.com,frank@company.com,2025-01-29T11:00:00,OKRs next quarter,Let's push to March 15.
+msg_11,frank@company.com,alice@company.com,2025-01-02T21:00:00,Product launch timeline,We need 2 more backend engineers.
+msg_12,alice@company.com,carol@company.com,2025-01-28T03:00:00,Security review,We need 2 more backend engineers.
+msg_13,dave@company.com,carol@company.com,2025-01-06T11:00:00,Hiring plan engineering,Let's push to March 15.
+msg_14,frank@company.com,carol@company.com,2025-01-23T21:00:00,Meeting tomorrow,Can we align on the numbers by Friday?
+msg_15,eve@company.com,bob@company.com,2025-01-18T23:00:00,Product launch timeline,Let's push to March 15.
+msg_16,dave@company.com,eve@company.com,2025-01-09T20:00:00,Meeting tomorrow,I'll send the draft by EOD.
+msg_17,bob@company.com,dave@company.com,2025-01-27T01:00:00,Product launch timeline,Can we align on the numbers by Friday?
+msg_18,carol@company.com,eve@company.com,2025-01-09T02:00:00,Product launch timeline,I'll send the draft by EOD.
+msg_19,frank@company.com,carol@company.com,2025-01-07T20:00:00,Security review,All services passed. Proceeding with deploy.
+msg_20,frank@company.com,dave@company.com,2025-01-05T08:00:00,Product launch timeline,Let's push to March 15.
+msg_21,frank@company.com,eve@company.com,2025-01-18T08:00:00,Meeting tomorrow,I'll send the draft by EOD.
+msg_22,dave@company.com,frank@company.com,2025-01-13T11:00:00,Product launch timeline,Let's push to March 15.
+msg_23,eve@company.com,dave@company.com,2025-01-03T01:00:00,Q4 budget approval,Let's push to March 15.
+msg_24,frank@company.com,bob@company.com,2025-01-26T21:00:00,Security review,I'll send the draft by EOD.
+msg_25,alice@company.com,eve@company.com,2025-01-13T19:00:00,Security review,I'll send the draft by EOD.
+msg_26,carol@company.com,frank@company.com,2025-01-28T00:00:00,Meeting tomorrow,Same time tomorrow works.
+msg_27,alice@company.com,frank@company.com,2025-01-25T08:00:00,Meeting tomorrow,We need 2 more backend engineers.
+msg_28,alice@company.com,dave@company.com,2025-01-14T05:00:00,Security review,Can we align on the numbers by Friday?
+msg_29,frank@company.com,carol@company.com,2025-01-17T05:00:00,OKRs next quarter,Can we align on the numbers by Friday?
+msg_30,frank@company.com,carol@company.com,2025-01-27T20:00:00,OKRs next quarter,I'll send the draft by EOD.
+msg_31,bob@company.com,carol@company.com,2025-01-12T05:00:00,OKRs next quarter,I'll send the draft by EOD.
+msg_32,alice@company.com,frank@company.com,2025-01-11T15:00:00,Q4 budget approval,Can we align on the numbers by Friday?
+msg_33,carol@company.com,dave@company.com,2025-01-08T01:00:00,Product launch timeline,I'll send the draft by EOD.
+msg_34,alice@company.com,bob@company.com,2025-01-24T15:00:00,Q4 budget approval,I'll send the draft by EOD.
+msg_35,bob@company.com,carol@company.com,2025-01-22T15:00:00,OKRs next quarter,Let's push to March 15.
+msg_36,carol@company.com,frank@company.com,2025-01-28T19:00:00,Security review,Let's push to March 15.
+msg_37,eve@company.com,bob@company.com,2025-01-23T09:00:00,Security review,Same time tomorrow works.
+msg_38,frank@company.com,carol@company.com,2025-01-15T16:00:00,Security review,Can we align on the numbers by Friday?
+msg_39,bob@company.com,carol@company.com,2025-01-03T10:00:00,Q4 budget approval,I'll send the draft by EOD.
+msg_40,eve@company.com,bob@company.com,2025-01-19T07:00:00,Q4 budget approval,Can we align on the numbers by Friday?
+msg_41,frank@company.com,alice@company.com,2025-01-08T02:00:00,Q4 budget approval,We need 2 more backend engineers.
+msg_42,alice@company.com,frank@company.com,2025-01-08T08:00:00,Meeting tomorrow,All services passed. Proceeding with deploy.
+msg_43,bob@company.com,frank@company.com,2025-01-05T23:00:00,OKRs next quarter,I'll send the draft by EOD.
+msg_44,dave@company.com,bob@company.com,2025-01-26T15:00:00,Security review,Let's push to March 15.
+msg_45,alice@company.com,bob@company.com,2025-01-22T13:00:00,Hiring plan engineering,All services passed. Proceeding with deploy.
+msg_46,dave@company.com,eve@company.com,2025-01-28T23:00:00,Q4 budget approval,Same time tomorrow works.
+msg_47,frank@company.com,alice@company.com,2025-01-02T12:00:00,Meeting tomorrow,We need 2 more backend engineers.
+msg_48,alice@company.com,carol@company.com,2025-01-07T06:00:00,OKRs next quarter,All services passed. Proceeding with deploy.
+msg_49,bob@company.com,eve@company.com,2025-01-06T08:00:00,Security review,Let's push to March 15.
+msg_50,alice@company.com,eve@company.com,2025-01-26T17:00:00,Q4 budget approval,Can we align on the numbers by Friday?
+msg_51,frank@company.com,eve@company.com,2025-01-27T00:00:00,Q4 budget approval,Let's push to March 15.
+msg_52,bob@company.com,eve@company.com,2025-01-16T15:00:00,Product launch timeline,All services passed. Proceeding with deploy.
+msg_53,alice@company.com,carol@company.com,2025-01-13T00:00:00,Security review,We need 2 more backend engineers.
+msg_54,dave@company.com,carol@company.com,2025-01-14T22:00:00,Meeting tomorrow,I'll send the draft by EOD.
+msg_55,frank@company.com,dave@company.com,2025-01-05T06:00:00,Hiring plan engineering,Let's push to March 15.
+msg_56,alice@company.com,frank@company.com,2025-01-24T17:00:00,Q4 budget approval,Same time tomorrow works.
+msg_57,carol@company.com,alice@company.com,2025-01-02T18:00:00,Security review,I'll send the draft by EOD.
+msg_58,eve@company.com,bob@company.com,2025-01-02T16:00:00,Q4 budget approval,Let's push to March 15.
+msg_59,alice@company.com,frank@company.com,2025-01-03T21:00:00,Product launch timeline,All services passed. Proceeding with deploy.
+msg_60,alice@company.com,frank@company.com,2025-01-08T18:00:00,OKRs next quarter,Can we align on the numbers by Friday?
+msg_61,eve@company.com,alice@company.com,2025-01-14T21:00:00,OKRs next quarter,I'll send the draft by EOD.
+msg_62,eve@company.com,carol@company.com,2025-01-30T08:00:00,Product launch timeline,Same time tomorrow works.
+msg_63,frank@company.com,carol@company.com,2025-01-08T08:00:00,Security review,Let's push to March 15.
+msg_64,frank@company.com,carol@company.com,2025-01-15T10:00:00,Q4 budget approval,Can we align on the numbers by Friday?
+msg_65,dave@company.com,frank@company.com,2025-01-19T03:00:00,Q4 budget approval,I'll send the draft by EOD.
+msg_66,bob@company.com,frank@company.com,2025-01-09T04:00:00,Hiring plan engineering,Can we align on the numbers by Friday?
+msg_67,bob@company.com,dave@company.com,2025-01-10T05:00:00,Security review,I'll send the draft by EOD.
+msg_68,frank@company.com,carol@company.com,2025-01-20T20:00:00,OKRs next quarter,Can we align on the numbers by Friday?
+msg_69,frank@company.com,eve@company.com,2025-01-10T21:00:00,Q4 budget approval,Let's push to March 15.
+msg_70,carol@company.com,alice@company.com,2025-01-29T03:00:00,Meeting tomorrow,I'll send the draft by EOD.
+msg_71,bob@company.com,dave@company.com,2025-01-10T19:00:00,Product launch timeline,Same time tomorrow works.
+msg_72,carol@company.com,bob@company.com,2025-01-22T20:00:00,Hiring plan engineering,I'll send the draft by EOD.
+msg_73,dave@company.com,carol@company.com,2025-01-29T01:00:00,Q4 budget approval,Same time tomorrow works.
+msg_74,dave@company.com,carol@company.com,2025-01-02T00:00:00,Hiring plan engineering,Let's push to March 15.
+msg_75,frank@company.com,carol@company.com,2025-01-06T23:00:00,Security review,I'll send the draft by EOD.
+msg_76,frank@company.com,dave@company.com,2025-01-18T00:00:00,Q4 budget approval,Can we align on the numbers by Friday?
+msg_77,frank@company.com,bob@company.com,2025-01-18T01:00:00,Hiring plan engineering,I'll send the draft by EOD.
+msg_78,eve@company.com,bob@company.com,2025-01-14T04:00:00,Q4 budget approval,We need 2 more backend engineers.
+msg_79,carol@company.com,alice@company.com,2025-01-29T11:00:00,Product launch timeline,Same time tomorrow works.

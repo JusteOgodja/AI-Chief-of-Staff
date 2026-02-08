@@ -1,0 +1,802 @@
+[
+  {
+    "event_id": "msg_0_alice@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-01T23:00:00",
+    "subject": "Hiring plan engineering",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_1_carol@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-24T03:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "Same time tomorrow works.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_2_alice@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-19T13:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_3_carol@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-08T16:00:00",
+    "subject": "OKRs next quarter",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_4_bob@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-23T20:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_5_bob@company.com",
+    "sender_id": "dave@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-15T18:00:00",
+    "subject": "Hiring plan engineering",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_6_eve@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-11T08:00:00",
+    "subject": "Product launch timeline",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_7_alice@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-03T12:00:00",
+    "subject": "Q4 budget approval",
+    "body": "We need 2 more backend engineers.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_8_frank@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-09T01:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "All services passed. Proceeding with deploy.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_9_alice@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-30T12:00:00",
+    "subject": "Q4 budget approval",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_10_frank@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-29T11:00:00",
+    "subject": "OKRs next quarter",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_11_alice@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-02T21:00:00",
+    "subject": "Product launch timeline",
+    "body": "We need 2 more backend engineers.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_12_carol@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-28T03:00:00",
+    "subject": "Security review",
+    "body": "We need 2 more backend engineers.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_13_carol@company.com",
+    "sender_id": "dave@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-06T11:00:00",
+    "subject": "Hiring plan engineering",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_14_carol@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-23T21:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_15_bob@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-18T23:00:00",
+    "subject": "Product launch timeline",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_16_eve@company.com",
+    "sender_id": "dave@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-09T20:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_17_dave@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "dave@company.com",
+    "timestamp": "2025-01-27T01:00:00",
+    "subject": "Product launch timeline",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_18_eve@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-09T02:00:00",
+    "subject": "Product launch timeline",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_19_carol@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-07T20:00:00",
+    "subject": "Security review",
+    "body": "All services passed. Proceeding with deploy.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_20_dave@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "dave@company.com",
+    "timestamp": "2025-01-05T08:00:00",
+    "subject": "Product launch timeline",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_21_eve@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-18T08:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_22_frank@company.com",
+    "sender_id": "dave@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-13T11:00:00",
+    "subject": "Product launch timeline",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_23_dave@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "dave@company.com",
+    "timestamp": "2025-01-03T01:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_24_bob@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-26T21:00:00",
+    "subject": "Security review",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_25_eve@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-13T19:00:00",
+    "subject": "Security review",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_26_frank@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-28T00:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "Same time tomorrow works.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_27_frank@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-25T08:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "We need 2 more backend engineers.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_28_dave@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "dave@company.com",
+    "timestamp": "2025-01-14T05:00:00",
+    "subject": "Security review",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_29_carol@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-17T05:00:00",
+    "subject": "OKRs next quarter",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_30_carol@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-27T20:00:00",
+    "subject": "OKRs next quarter",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_31_carol@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-12T05:00:00",
+    "subject": "OKRs next quarter",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_32_frank@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-11T15:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_33_dave@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "dave@company.com",
+    "timestamp": "2025-01-08T01:00:00",
+    "subject": "Product launch timeline",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_34_bob@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-24T15:00:00",
+    "subject": "Q4 budget approval",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_35_carol@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-22T15:00:00",
+    "subject": "OKRs next quarter",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_36_frank@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-28T19:00:00",
+    "subject": "Security review",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_37_bob@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-23T09:00:00",
+    "subject": "Security review",
+    "body": "Same time tomorrow works.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_38_carol@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-15T16:00:00",
+    "subject": "Security review",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_39_carol@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-03T10:00:00",
+    "subject": "Q4 budget approval",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_40_bob@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-19T07:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_41_alice@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-08T02:00:00",
+    "subject": "Q4 budget approval",
+    "body": "We need 2 more backend engineers.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_42_frank@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-08T08:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "All services passed. Proceeding with deploy.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_43_frank@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-05T23:00:00",
+    "subject": "OKRs next quarter",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_44_bob@company.com",
+    "sender_id": "dave@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-26T15:00:00",
+    "subject": "Security review",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_45_bob@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-22T13:00:00",
+    "subject": "Hiring plan engineering",
+    "body": "All services passed. Proceeding with deploy.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_46_eve@company.com",
+    "sender_id": "dave@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-28T23:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Same time tomorrow works.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_47_alice@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-02T12:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "We need 2 more backend engineers.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_48_carol@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-07T06:00:00",
+    "subject": "OKRs next quarter",
+    "body": "All services passed. Proceeding with deploy.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_49_eve@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-06T08:00:00",
+    "subject": "Security review",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_50_eve@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-26T17:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_51_eve@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-27T00:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_52_eve@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-16T15:00:00",
+    "subject": "Product launch timeline",
+    "body": "All services passed. Proceeding with deploy.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_53_carol@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-13T00:00:00",
+    "subject": "Security review",
+    "body": "We need 2 more backend engineers.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_54_carol@company.com",
+    "sender_id": "dave@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-14T22:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_55_dave@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "dave@company.com",
+    "timestamp": "2025-01-05T06:00:00",
+    "subject": "Hiring plan engineering",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_56_frank@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-24T17:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Same time tomorrow works.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_57_alice@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-02T18:00:00",
+    "subject": "Security review",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_58_bob@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-02T16:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_59_frank@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-03T21:00:00",
+    "subject": "Product launch timeline",
+    "body": "All services passed. Proceeding with deploy.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_60_frank@company.com",
+    "sender_id": "alice@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-08T18:00:00",
+    "subject": "OKRs next quarter",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_61_alice@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-14T21:00:00",
+    "subject": "OKRs next quarter",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_62_carol@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-30T08:00:00",
+    "subject": "Product launch timeline",
+    "body": "Same time tomorrow works.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_63_carol@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-08T08:00:00",
+    "subject": "Security review",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_64_carol@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-15T10:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_65_frank@company.com",
+    "sender_id": "dave@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-19T03:00:00",
+    "subject": "Q4 budget approval",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_66_frank@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "frank@company.com",
+    "timestamp": "2025-01-09T04:00:00",
+    "subject": "Hiring plan engineering",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_67_dave@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "dave@company.com",
+    "timestamp": "2025-01-10T05:00:00",
+    "subject": "Security review",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_68_carol@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-20T20:00:00",
+    "subject": "OKRs next quarter",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_69_eve@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "eve@company.com",
+    "timestamp": "2025-01-10T21:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_70_alice@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-29T03:00:00",
+    "subject": "Meeting tomorrow",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_71_dave@company.com",
+    "sender_id": "bob@company.com",
+    "receiver_id": "dave@company.com",
+    "timestamp": "2025-01-10T19:00:00",
+    "subject": "Product launch timeline",
+    "body": "Same time tomorrow works.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_72_bob@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-22T20:00:00",
+    "subject": "Hiring plan engineering",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_73_carol@company.com",
+    "sender_id": "dave@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-29T01:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Same time tomorrow works.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_74_carol@company.com",
+    "sender_id": "dave@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-02T00:00:00",
+    "subject": "Hiring plan engineering",
+    "body": "Let's push to March 15.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_75_carol@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "carol@company.com",
+    "timestamp": "2025-01-06T23:00:00",
+    "subject": "Security review",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_76_dave@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "dave@company.com",
+    "timestamp": "2025-01-18T00:00:00",
+    "subject": "Q4 budget approval",
+    "body": "Can we align on the numbers by Friday?",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_77_bob@company.com",
+    "sender_id": "frank@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-18T01:00:00",
+    "subject": "Hiring plan engineering",
+    "body": "I'll send the draft by EOD.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_78_bob@company.com",
+    "sender_id": "eve@company.com",
+    "receiver_id": "bob@company.com",
+    "timestamp": "2025-01-14T04:00:00",
+    "subject": "Q4 budget approval",
+    "body": "We need 2 more backend engineers.",
+    "thread_id": null,
+    "source": "email"
+  },
+  {
+    "event_id": "msg_79_alice@company.com",
+    "sender_id": "carol@company.com",
+    "receiver_id": "alice@company.com",
+    "timestamp": "2025-01-29T11:00:00",
+    "subject": "Product launch timeline",
+    "body": "Same time tomorrow works.",
+    "thread_id": null,
+    "source": "email"
+  }
+]

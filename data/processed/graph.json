@@ -1,0 +1,541 @@
+{
+  "nodes": [
+    {
+      "id": "alice@company.com",
+      "node_type": "person",
+      "label": "alice@company.com"
+    },
+    {
+      "id": "bob@company.com",
+      "node_type": "person",
+      "label": "bob@company.com"
+    },
+    {
+      "id": "topic_-516031723637935148",
+      "node_type": "topic",
+      "label": "product launch"
+    },
+    {
+      "id": "topic_-6218811651782698230",
+      "node_type": "topic",
+      "label": "Q4 planning"
+    },
+    {
+      "id": "topic_-2746317855655509299",
+      "node_type": "topic",
+      "label": "marketing campaign"
+    },
+    {
+      "id": "decision_786941348913285577",
+      "node_type": "decision",
+      "label": "proceed with Q4 product launch"
+    },
+    {
+      "id": "decision_-887818465196810446",
+      "node_type": "decision",
+      "label": "marketing team prepares campaign"
+    },
+    {
+      "id": "decision_2721225039349369298",
+      "node_type": "decision",
+      "label": "engineering finalizes features"
+    },
+    {
+      "id": "carol@company.com",
+      "node_type": "person",
+      "label": "carol@company.com"
+    },
+    {
+      "id": "team@company.com",
+      "node_type": "person",
+      "label": "team@company.com"
+    },
+    {
+      "id": "topic_7546763782694217318",
+      "node_type": "topic",
+      "label": "budget"
+    },
+    {
+      "id": "topic_-8824219431467213367",
+      "node_type": "topic",
+      "label": "resource allocation"
+    },
+    {
+      "id": "topic_438704854268636433",
+      "node_type": "topic",
+      "label": "AI initiative"
+    },
+    {
+      "id": "decision_-1004397546660679758",
+      "node_type": "decision",
+      "label": "reallocate budget from legacy project"
+    },
+    {
+      "id": "decision_8854617958774088749",
+      "node_type": "decision",
+      "label": "fund new AI initiative"
+    },
+    {
+      "id": "david@company.com",
+      "node_type": "person",
+      "label": "david@company.com"
+    },
+    {
+      "id": "topic_7452749421069455370",
+      "node_type": "topic",
+      "label": "customer feedback"
+    },
+    {
+      "id": "topic_-4809559657826155132",
+      "node_type": "topic",
+      "label": "mobile app"
+    },
+    {
+      "id": "topic_2802379976045531662",
+      "node_type": "topic",
+      "label": "development priorities"
+    },
+    {
+      "id": "decision_6995567584865475558",
+      "node_type": "decision",
+      "label": "prioritize mobile app development"
+    },
+    {
+      "id": "decision_4841820292717391735",
+      "node_type": "decision",
+      "label": "include in next sprint"
+    },
+    {
+      "id": "eve@company.com",
+      "node_type": "person",
+      "label": "eve@company.com"
+    },
+    {
+      "id": "topic_8515998108102253101",
+      "node_type": "topic",
+      "label": "meeting schedule"
+    },
+    {
+      "id": "topic_411017376005187419",
+      "node_type": "topic",
+      "label": "team sync"
+    },
+    {
+      "id": "topic_1089144221189958107",
+      "node_type": "topic",
+      "label": "all-hands"
+    },
+    {
+      "id": "decision_8117809474196171458",
+      "node_type": "decision",
+      "label": "cancel Thursday sync"
+    },
+    {
+      "id": "decision_-8949587686765691152",
+      "node_type": "decision",
+      "label": "reschedule for Friday"
+    },
+    {
+      "id": "frank@company.com",
+      "node_type": "person",
+      "label": "frank@company.com"
+    },
+    {
+      "id": "topic_-908429315930799793",
+      "node_type": "topic",
+      "label": "security"
+    },
+    {
+      "id": "topic_-1855588570220650034",
+      "node_type": "topic",
+      "label": "audit"
+    },
+    {
+      "id": "topic_5223341768519130999",
+      "node_type": "topic",
+      "label": "vulnerabilities"
+    },
+    {
+      "id": "topic_8316313930253234990",
+      "node_type": "topic",
+      "label": "legacy system"
+    },
+    {
+      "id": "decision_376434364743471364",
+      "node_type": "decision",
+      "label": "patch critical vulnerabilities"
+    },
+    {
+      "id": "decision_8729427539997205857",
+      "node_type": "decision",
+      "label": "address before product launch"
+    },
+    {
+      "id": "all@company.com",
+      "node_type": "person",
+      "label": "all@company.com"
+    },
+    {
+      "id": "topic_-3440075265110667846",
+      "node_type": "topic",
+      "label": "postponement"
+    },
+    {
+      "id": "decision_-6513875120565182802",
+      "node_type": "decision",
+      "label": "postpone Q4 product launch"
+    },
+    {
+      "id": "decision_4462945554127216535",
+      "node_type": "decision",
+      "label": "resolve security issues first"
+    }
+  ],
+  "links": [
+    {
+      "source": "alice@company.com",
+      "target": "topic_-516031723637935148",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "topic_-6218811651782698230",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "topic_-2746317855655509299",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "decision_786941348913285577",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "decision_-887818465196810446",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "decision_2721225039349369298",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "topic_-908429315930799793",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "topic_-3440075265110667846",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "decision_-6513875120565182802",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "decision_4462945554127216535",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "alice@company.com",
+      "target": "all@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_-516031723637935148",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_-516031723637935148",
+      "target": "all@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_-6218811651782698230",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_-2746317855655509299",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_786941348913285577",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_-887818465196810446",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_2721225039349369298",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "carol@company.com",
+      "target": "topic_7546763782694217318",
+      "weight": 1
+    },
+    {
+      "source": "carol@company.com",
+      "target": "topic_-8824219431467213367",
+      "weight": 1
+    },
+    {
+      "source": "carol@company.com",
+      "target": "topic_438704854268636433",
+      "weight": 1
+    },
+    {
+      "source": "carol@company.com",
+      "target": "decision_-1004397546660679758",
+      "weight": 1
+    },
+    {
+      "source": "carol@company.com",
+      "target": "decision_8854617958774088749",
+      "weight": 1
+    },
+    {
+      "source": "carol@company.com",
+      "target": "team@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_7546763782694217318",
+      "target": "team@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_-8824219431467213367",
+      "target": "team@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_438704854268636433",
+      "target": "team@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_-1004397546660679758",
+      "target": "team@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_8854617958774088749",
+      "target": "team@company.com",
+      "weight": 1
+    },
+    {
+      "source": "david@company.com",
+      "target": "topic_7452749421069455370",
+      "weight": 1
+    },
+    {
+      "source": "david@company.com",
+      "target": "topic_-4809559657826155132",
+      "weight": 1
+    },
+    {
+      "source": "david@company.com",
+      "target": "topic_2802379976045531662",
+      "weight": 1
+    },
+    {
+      "source": "david@company.com",
+      "target": "decision_6995567584865475558",
+      "weight": 1
+    },
+    {
+      "source": "david@company.com",
+      "target": "decision_4841820292717391735",
+      "weight": 1
+    },
+    {
+      "source": "david@company.com",
+      "target": "alice@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_7452749421069455370",
+      "target": "alice@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_-4809559657826155132",
+      "target": "alice@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_2802379976045531662",
+      "target": "alice@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_6995567584865475558",
+      "target": "alice@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_4841820292717391735",
+      "target": "alice@company.com",
+      "weight": 1
+    },
+    {
+      "source": "eve@company.com",
+      "target": "topic_8515998108102253101",
+      "weight": 1
+    },
+    {
+      "source": "eve@company.com",
+      "target": "topic_411017376005187419",
+      "weight": 1
+    },
+    {
+      "source": "eve@company.com",
+      "target": "topic_1089144221189958107",
+      "weight": 1
+    },
+    {
+      "source": "eve@company.com",
+      "target": "decision_8117809474196171458",
+      "weight": 1
+    },
+    {
+      "source": "eve@company.com",
+      "target": "decision_-8949587686765691152",
+      "weight": 1
+    },
+    {
+      "source": "eve@company.com",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_8515998108102253101",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_411017376005187419",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_1089144221189958107",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_8117809474196171458",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_-8949587686765691152",
+      "target": "bob@company.com",
+      "weight": 1
+    },
+    {
+      "source": "frank@company.com",
+      "target": "topic_-908429315930799793",
+      "weight": 1
+    },
+    {
+      "source": "frank@company.com",
+      "target": "topic_-1855588570220650034",
+      "weight": 1
+    },
+    {
+      "source": "frank@company.com",
+      "target": "topic_5223341768519130999",
+      "weight": 1
+    },
+    {
+      "source": "frank@company.com",
+      "target": "topic_8316313930253234990",
+      "weight": 1
+    },
+    {
+      "source": "frank@company.com",
+      "target": "decision_376434364743471364",
+      "weight": 1
+    },
+    {
+      "source": "frank@company.com",
+      "target": "decision_8729427539997205857",
+      "weight": 1
+    },
+    {
+      "source": "frank@company.com",
+      "target": "carol@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_-908429315930799793",
+      "target": "carol@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_-908429315930799793",
+      "target": "all@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_-1855588570220650034",
+      "target": "carol@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_5223341768519130999",
+      "target": "carol@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_8316313930253234990",
+      "target": "carol@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_376434364743471364",
+      "target": "carol@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_8729427539997205857",
+      "target": "carol@company.com",
+      "weight": 1
+    },
+    {
+      "source": "topic_-3440075265110667846",
+      "target": "all@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_-6513875120565182802",
+      "target": "all@company.com",
+      "weight": 1
+    },
+    {
+      "source": "decision_4462945554127216535",
+      "target": "all@company.com",
+      "weight": 1
+    }
+  ]
+}
